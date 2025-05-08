@@ -16,12 +16,16 @@ git clone https://github.com/BrendanJeaney/BrendanHeaney_DL4H_Project.git
 Then create a virtual environment and install the dependencies
 
 python -m venv venv
+
 venv/Source/activate   # For windows, or source venv/bin/activate for linux/mac
+
 pip install -r requirements.txt
+
 
 Run the project_testing.py file to build the U-Net and Retina U-Net models
 
 python project_testing.py
+
 
 
 ### If you run into issues running the code
