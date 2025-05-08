@@ -16,9 +16,10 @@ if __name__ == "__main__":
 
     eval(unet, ds)
 
+    ds2 = LIDCDataLoader(r'LIDC-IDRI-slices',max_samples=1200,return_targets=True)
     # unet = UnNet()
     model = retinaUnNet(unet)
-    train_retunet(model, ds, epochs=5, batch_size=4)
+    train_retunet(model, ds2, epochs=5, batch_size=4)
 
     evaluate_retina_unet(model, ds)
 

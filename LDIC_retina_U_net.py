@@ -10,7 +10,7 @@ from LIDC_UNet import UnNet, train_unet, eval
 
 
 class retinaUnNet(nn.Module):
-    def __init__(self, unnet, ret_head):
+    def __init__(self, unnet):
         super().__init__()
         self.unet = unnet
         self.retina = retHead(in_channels=16)
