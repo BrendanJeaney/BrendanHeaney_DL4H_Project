@@ -17,7 +17,7 @@ class retinaUnNet(nn.Module):
 
 
     def forward(self, x):
-        segmentation, feat = self.unet(x,return_feat=True)
+        segmentation, feat = self.unet(x,ret_feat=True)
         b_preds, preds = self.retina(feat)
 
         return segmentation, b_preds, preds
